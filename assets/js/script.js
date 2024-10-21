@@ -58,20 +58,14 @@ $(document).ready(function () {
 
 document.addEventListener('visibilitychange',
     function () {
-        if (document.visibilityState === "visible") {
             document.title = "Portfolio - Manzoor Mohd";
             $("#favicon").attr("href", "assets/images/favicon.jpg");
-        }
-        else {
-            document.title = "Portfolio - Manzoor Mohd";
-            $("#favicon").attr("href", "assets/images/favicon.jpg");
-        }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Machine Learning", "Deep Learning", "Artificial Intelligence", "Natural Language Processing","Full Stack Web Development"],
+    strings: ["Machine Learning", "Deep Learning", "Artificial Intelligence", "Web Development"],
     loop: true,
     typeSpeed: 60,
     backSpeed: 30,
@@ -154,23 +148,6 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-// <!-- tilt js effect starts -->
-/*VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 15,
-});*/
-// <!-- tilt js effect ends -->
-
-
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
-
 // disable developer mode
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
@@ -189,19 +166,6 @@ document.onkeydown = function (e) {
         return false;
     }
 }
-
-// // Start of Tawk.to Live Chat
-// var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-// (function () {
-//     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-//     s1.async = true;
-//     s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-//     s1.charset = 'UTF-8';
-//     s1.setAttribute('crossorigin', '*');
-//     s0.parentNode.insertBefore(s1, s0);
-// })();
-// // End of Tawk.to Live Chat
-
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
