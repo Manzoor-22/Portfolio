@@ -549,9 +549,9 @@ header .navbar ul li a:hover {
     background: #141414;
     padding: 10px;
     min-height: 80vh;
-    margin-top: 10rem;
 }
 .education .box-container {
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -650,7 +650,7 @@ header .navbar ul li a:hover {
 /* work section starts */
 .work {
     /* background: #010124; */
-    background: linear-gradient(to bottom, #000031, #00002c);
+    background: linear-gradient(to bottom, #fa3838, #8a0c21);
 }
 .work h2 {
     color: #fff;
